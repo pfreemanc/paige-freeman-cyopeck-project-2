@@ -1,0 +1,18 @@
+
+// colour variables
+$body-text-color: #FFFFFF;
+$heading-color: #FF8327;
+$background-color-dark: #111010;
+$background-color-red: #220303;
+
+// font variables
+// font-family: 'Chathura', sans-serif;
+// font-family: 'Tulpen One', cursive;
+$primary-font: 'Chathura', sans-serif;
+$secondary-font: 'Tulpen One', cursive;
+
+$body-text-size: 3.9rem;
+
+@import "setup";
+@import "header";
+@import "index";
