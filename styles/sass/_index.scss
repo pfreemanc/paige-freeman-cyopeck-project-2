@@ -25,21 +25,126 @@
   }
 }
 
-.section-two {
-  background: $background-color-red;
-  color: $body-text-color;  
-  .image-container {
-    width: 40%;
-  }
-  .text-container {
-    h2 {
-      font-family: $primary-font;
-      font-size:6.8rem;
-    }
-    p {
-      font-family: $primary-font;
-      font-size: $body-text-size;
+// .section-two {
+//   background: $background-color-red;
+//   color: $body-text-color;
+  
+//   .main-container {
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: space-between;
+//     align-items: center;
+//   }
+//   .image-container {
+//     width: 45%;
+//   }
+//   .text-container {
+//     max-width: 45%;
+//     h2 {
+//       font-family: $primary-font;
+//       font-size:6.8rem;
+//     }
+//     p {
+//       font-family: $primary-font;
+//       font-size: $body-text-size;
+//     }
+//   }
+//   .image-container + .text-container {
+//     // padding-right: auto;
+  // }
+
+  // trying a grid for section two. commenting out above. 
+
+  .section-two {
+    .main-container {
+      //background colours
+      background-color: $background-color-red;
+      color: $body-text-color;
+
+      // laying out the grid template
+      display: grid;
+      grid-template-columns: 3fr 1fr 3fr;
+      .image-container + .text-container,
+      .text-container + .image-container{
+        grid-column: 3;
+      }
+      .text-container + .text-container {
+        margin-left: auto;
+      }
+      .image-container + .text-container {
+        margin-right: auto;
+      }
+
+      // general text container styles
+      .text-container {
+        margin: auto 0;
+        width: 80%;
+        h2 {
+          font-family: $primary-font;
+          font-size: 6.8rem;
+        }
+        p {
+          font-family: $primary-font;
+          font-size: 3.8rem;
+        }
+      }
     }
   }
 
-}
+
+  .image-container {
+    background-color: $background-color-dark;
+  }
+  // section 3
+  .section-three {
+    padding: 100px 0;
+    background-color: $background-color-dark;
+
+    .text-container {
+      text-align: center;
+      h2 {
+        font-family: $primary-font;
+        font-size: $header-text-size;
+        color: $heading-color;
+      }
+      p {
+        font-family: $primary-font;
+        font-size: $body-text-size;
+        color: #fff;
+      }
+    }
+  }
+
+  //section 4
+
+  .section-four{
+    background-color: $background-color-dark;
+    padding: 100px 0;
+    .main-container {
+      display: flex;
+      justify-content: space-between;
+      color: white;
+      .text-container {
+        width: 60%;
+      }
+      .image-container {
+        width: 30%;
+      }
+      h2 {
+        color: $heading-color;
+      }
+    }
+  }
+
+  //section five
+  .section-five {
+    background-color: $background-color-red;
+    padding: 100px 0;
+    .main-container {
+      display: flex;
+      justify-content: space-between;
+      .image-container {
+        width: 30%;
+      }
+    }
+  }
