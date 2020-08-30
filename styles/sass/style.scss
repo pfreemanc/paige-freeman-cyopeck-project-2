@@ -24,6 +24,37 @@ $header-text-size: 6.8rem;
 
 // button styles
 
+// stripping styles
+html {
+  font-size: 62.5%;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
 .gen-button {
   font-family: $secondary-font;
   font-size: $body-text-size;
@@ -32,7 +63,7 @@ $header-text-size: 6.8rem;
   height: 50px;
   padding: 0 25px;
   text-align: center;
-  background-color: #BF2603;
+  background-color:$button-color;
   border: 0 solid $button-color;
   color: white;
   transition: all .5s;
@@ -52,4 +83,15 @@ p {
   font-size: $body-text-size;
   line-height:30px;
   letter-spacing: 1.9px;
+}
+
+h3 {
+  font-family: $primary-font;
+  font-size: 3rem;
+}
+
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
 }
