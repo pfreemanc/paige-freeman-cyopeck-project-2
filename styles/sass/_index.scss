@@ -179,6 +179,11 @@ header {
 
   //footer
   footer {
-    background-color: $background-color-dark;
+    background-color: #272727;
+    color: #fff;
+    text-align: center;
     padding: 20px 0;
+    a {
+      color: $heading-color;
+    }
   }
