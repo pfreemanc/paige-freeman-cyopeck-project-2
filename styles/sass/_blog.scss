@@ -1,0 +1,135 @@
+
+
+// font variables
+// font-family: 'Chathura', sans-serif;
+// font-family: 'Tulpen One', cursive;
+$primary-font: 'Chathura', sans-serif;
+$secondary-font: 'Tulpen One', cursive;
+$body-text-size: 3.8rem;
+$header-text-size: 6.8rem;
+
+// colour variables
+$body-text-color: #FFFFFF;
+$heading-color: #FF8327;
+$background-color-dark: #111010;
+$background-color-red: #220303;
+$button-color: #BF2603;
+
+.blog-header {
+  background-image: url("../assets/blog-header-1.jpg");
+  h1 {
+    color: #fff;
+    font-family: $primary-font;
+    font-size: 8rem;
+    margin-bottom: 100px;
+  }
+}
+
+//setting up the flex container, the main container for both columns.
+
+.flex-container {
+  display: flex;
+  padding: 100px 0;
+  background: $background-color-dark;
+  color: #fff;
+  p {
+    padding: 20px 0;
+  }
+  a {
+    font-family: $primary-font;
+    font-size: $body-text-size;
+    color: $heading-color;
+  }
+  h3 {
+    color: $heading-color;
+    margin: 0;
+    margin-bottom: 10px;
+  } 
+  aside {
+    width: calc(30% - 50px);
+    margin-right: 50px;
+    .image-container {
+      width: calc(100% - 20px);
+      height: 430px;
+      box-shadow: 20px 0px 0px 0px $background-color-red;
+      margin-bottom: -20px;
+      img {
+        object-fit: cover;
+        margin-top: -20px;
+      }
+    }
+    .aside-content {
+      padding: 20px 40px;
+      background: $background-color-red;
+      width: 80%;
+      margin-left: auto;
+    }
+
+    .post-list {
+     ul {
+       margin-left: 25px;
+       list-style-type: disc;
+       font-size: 2.4rem;
+       color: $heading-color;
+       li  p{
+         color: $body-text-color;
+         padding: 5px 0;
+       }
+     }
+    } 
+}
+  // blog post, right side
+  .right-content {
+    width: calc(70% - 50px);
+    margin-left: 100px;
+  }
+
+  //blog post styles
+  .blog-post {
+    .text-container {
+      padding: 100px;
+      margin-left: -20px;
+      border-left: 5px solid $heading-color;
+      border-bottom: 5px solid $heading-color;
+    }
+  }
+
+  .blog-post .image-container {
+    height: 600px;
+    margin-top: -250px;
+    box-shadow: -20px 20px $heading-color;
+    img {
+      object-fit: cover;
+    }
+  }
+
+  // comment section styles 
+  .comment-section {
+    padding: 50px 0;
+  }
+  .comment-block {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+    .image-container {
+      min-height: 100px;
+      min-width: 100px;
+      max-height: 100px;
+      max-width: 100px;
+      img {
+        object-fit: cover;
+      }
+    }
+    .comment-container {
+      margin-top: -10px;
+      margin-left: 40px;
+      h3 {
+        margin: 0;
+        color: $heading-color;
+        font-family: $primary-font;
+        font-size: $body-text-size;
+      }
+    }
+  }
+
+}

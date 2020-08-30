@@ -4,45 +4,66 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bar-One Contact</title>
+  <link href="https://fonts.googleapis.com/css2?family=Chathura:wght@400;700&family=Tulpen+One&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./styles/style.css">
+  <script src="https://kit.fontawesome.com/9a98468feb.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header>
-    <nav class="gen-nav">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li class="logo">Bar-One</li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
+  <header class="header-contact">
+
+    <div class="wrapper header-container">
+      <nav class="gen-nav">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li class="logo">Bar-One</li>
+          <li><a href="./blog2.html">Blog</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    <h1>Get in Touch</h1>
+    </div>
+
   </header>
 
   <main>
-
-    <h1>Get in Touch</h1>
-
-
-    <section class="contact">
-      <div class="icons">
-
+    <div class="grid-container wrapper">
+      <section class="contact">
+        <div class="icons">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-whatsapp"></i>
+          <p>info@email.com</p>
+        </div>
+    
+        <address>
+          123 - 456 - 7890
+          123 Queen Streert West, Unit 10
+          Toronto, Ontario
+          M5V2D5
+        </address>
+  
+      </section>
+      
+      <div class="form-container">
+        <form action="" class="form-contact">
+        
+          <label for="" class="sr-only">Name</label>
+          <input type="text" class="input-name" placeholder="Name">
+        
+          <label for="" class="sr-only">Email Address</label>
+          <input type="email" class="input-email" placeholder="Email address">
+        
+          <label for="" class="sr-only">Comment</label>
+          <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+        
+          <button type="submit" class="gen-button">Submit</button>
+        
+        </form>
       </div>
-
-      <address>
-
-      </address>
-
-    </section>
-    <form action="">
-
-      <label for="name"></label>
-      <input type="text" placeholder="Name">
-
-      <label for="email"></label>
-      <input type="email" name="email-input" id="email" placeholder="Email address">
-
-      <textarea name="" id="" cols="30" rows="10"></textarea>
-    </form>
+    </div>
 
 
   </main>

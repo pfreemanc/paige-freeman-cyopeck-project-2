@@ -17,6 +17,10 @@ $header-text-size: 6.8rem;
 @import "setup";
 @import "header";
 @import "index";
+@import "blog";
+@import "form";
+@import "contact";
+@import "media-queries";
 
 // button styles
 
@@ -31,6 +35,10 @@ $header-text-size: 6.8rem;
   background-color: #BF2603;
   border: 0 solid $button-color;
   color: white;
+  transition: all .5s;
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
 h2 {
@@ -42,4 +50,6 @@ h2 {
 p {
   font-family: $primary-font;
   font-size: $body-text-size;
+  line-height:30px;
+  letter-spacing: 1.9px;
 }

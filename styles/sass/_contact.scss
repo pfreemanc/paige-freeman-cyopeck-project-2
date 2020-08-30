@@ -1,0 +1,72 @@
+// colour variables
+$body-text-color: #FFFFFF;
+$heading-color: #FF8327;
+$background-color-dark: #111010;
+$background-color-red: #220303;
+$button-color: #BF2603;
+
+// font variables
+// font-family: 'Chathura', sans-serif;
+// font-family: 'Tulpen One', cursive;
+$primary-font: 'Chathura', sans-serif;
+$secondary-font: 'Tulpen One', cursive;
+$body-text-size: 3.8rem;
+$header-text-size: 6.8rem;
+
+
+.header-contact {
+  background-image: url("../assets/contact-header-1.jpg");
+  .header-container {
+    min-height: 75vh;
+    h1 {
+      color: #fff;
+      font-size: 8rem;
+      font-family: $primary-font;
+      margin-bottom: 100px;
+    }
+  }
+}
+
+main {
+  background: $background-color-dark;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 40px;
+  color: #fff;
+  padding: 100px 0;
+  .contact {
+    font-family: $primary-font;
+    font-size: $body-text-size;
+    address {
+      width: 50%;
+      line-height: 28px;
+      margin-top: 20px;
+    }
+    .icons i{
+      margin-right: 15px;
+    }
+  }
+}
+
+// styles for the form section
+
+.form-container {
+  background: $background-color-red;
+  margin-top: -250px;
+  box-shadow: 20px 20px $heading-color;
+  .form-contact {
+    grid-gap: 40px;
+    padding: 50px;
+    textarea {
+      background: $background-color-red;
+      border: 1px solid #fff;
+    }
+    input {
+      background: $background-color-red;
+      border-bottom: 1px solid #fff;
+    }
+  }
+}
