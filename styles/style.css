@@ -539,8 +539,14 @@ header .image-container img {
 }
 
 footer {
-  background-color: #111010;
+  background-color: #222020;
   padding: 20px 0;
+  text-align: center;
+  color: #fff;
+}
+
+footer a {
+  color: #FF8327;
 }
 
 .blog-header {
